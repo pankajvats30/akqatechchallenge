@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace AKQA.Web.Services
 {
@@ -19,6 +20,10 @@ namespace AKQA.Web.Services
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            /* add cross domain support to access APIs */
+            var enablecors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(enablecors);
         }
     }
 }
