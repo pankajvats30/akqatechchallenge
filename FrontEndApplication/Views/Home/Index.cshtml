@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>AKQA Tech Challenge</h1>
+    
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <label class="label-danger" style="display:none;"></label>
+
+        </div>
+        <div class="row ">
+            <label for="name" class="control-label">Enter Name:</label>
+            <input type="text" class="form-control" name="name" placeholder="e.g. John Smith" required /><br />
+            <label class="label-danger" id="labelName" style="display:none;"></label>
+        </div>
+        <div class="row">
+            <label for="name" class="control-label">Enter Number:</label><br />
+            <input type="text" class="form-control" placeholder="e.g. 123 , -123 , 123.45" name="number" required /><br />
+            <label class="label-danger" id="labelNumber" style="display:none;"></label>
+        </div>
+        <div class="row">
+            <input type="button" class="btn btn-primary" id="ConvertBtn" name="submit" value="Convert" />
+        </div>
+
+        <div class="row">
+            <h2>Result :</h2>
+            <label class="label-success" ></label>
+
+        </div>
+
+    </div>
+    <div class="col-md-6">
+        
+        
+    </div>
+</div>
