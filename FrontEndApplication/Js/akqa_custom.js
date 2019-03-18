@@ -6,6 +6,7 @@
 
         jQuery(".label-danger").hide();
         jQuery(".label-danger").text("");
+       
         var number = jQuery("input[name='number'").val();
         var name = jQuery("input[name='name'").val();
         var reg = /^-?[+]?[0-9]+([.][0-9]{1,2})?$/;
@@ -30,7 +31,7 @@
 
             return false;
         } else {
-
+            jQuery(".label-warning").show();
             $.ajax({
                 /* update the API host name */
                 url: "http://akqaservices.com/api/numberconverter/" + number+"/",
@@ -39,6 +40,7 @@
                 type: "get",
                 success: function (resp) {
                     jQuery(".label-success").show();
+                    jQuery(".label-warning").hide();
                     jQuery(".label-success").text(name + ' : "' +resp +'"');
                 }
             });
