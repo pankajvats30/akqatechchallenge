@@ -50,7 +50,6 @@ namespace AKQA.Web.Services.Helpers
             "ninety"
         };
 
-        // US Nnumbering:
         private static string[] _thousands =
         {
             "",

@@ -14,8 +14,7 @@ namespace AKQA.Web.Services.Controllers
         /// Returns the input number into Strings 
         /// </summary>
         /// <param name="number"></param>
-        /// <param name="postCode"></param>
-        /// <returns>Returns the String conversion of provided name concatinated with Name</returns>
+        /// <returns>Returns the String conversion of provided name concatenated with Name</returns>
         [Route("api/numberconverter/{number}/")]
         [HttpGet]
         public string Convert(string number)
