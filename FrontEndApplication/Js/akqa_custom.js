@@ -33,7 +33,7 @@
 
             $.ajax({
                 /* update the API host name */
-                url: "http://localhost:50839/api/numberconverter/" + number+"/",
+                url: "http://akqaservices.com/api/numberconverter/" + number+"/",
                 contentType: "application/json",
                 dataType: "json",
                 type: "get",
